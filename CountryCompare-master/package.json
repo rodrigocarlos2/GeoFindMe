@@ -1,0 +1,19 @@
+{
+  "name": "country-compare",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "sass": "sass -w css/src/main.scss:css/main.css",
+    "serve": "lite-server",
+    "start": "npm run sass && npm run serve"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "lite-server": "^2.2.2",
+    "materialize-css": "^0.97.8",
+    "mustache": "^2.2.1",
+    "node-sass": "^3.10.1"
+  }
+}
