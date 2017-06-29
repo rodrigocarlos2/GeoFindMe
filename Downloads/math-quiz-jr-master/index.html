@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Math Quiz Jr</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+    <link rel="stylesheet" href="/css/game.css" charset="utf-8">
+  </head>
+  <body>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col-sm-6">
+          <div class='display-3'>
+            Score:
+            <span id="score">0</span>
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <div class='display-3 text-right'>
+            Highest:
+            <span id="highest-score">0</span>
+          </div>
+        </div>
+      </div>
+      <section id="start-game">
+        <div class="jumbotron">
+          <h1 class="display-3">Math Quiz Jr!</h1>
+          <p class="lead">Let us see how quick you are with multiplications.</p>
+          <p class="lead">
+            <a class="btn btn-primary btn-lg" id="start" href="#" role="button">Start Quiz</a>
+          </p>
+        </div>
+      </section>
+      <section id="correct-answer">
+        <div class="jumbotron">
+          <h1 class="display-3 text-success">Correct!</h1>
+          <p class="lead">You are right.</p>
+          <p class="lead">
+            <a class="btn btn-success btn-lg" id="next-question" href="#" role="button">Next Question</a>
+          </p>
+        </div>
+      </section>
+      <section id="wrong-answer">
+        <div class="jumbotron">
+          <h1 class="display-3 text-danger">Wrong!</h1>
+          <p class="lead help-msg"></p>
+          <p class="lead">
+            <a class="btn btn-danger btn-lg" id="restart" href="#" role="button">Restart</a>
+          </p>
+        </div>
+      </section>
+      <section id="game">
+        <div class="card card-inverse card-info mt-5 mb-3">
+          <div class="card-block">
+            <h1 id='question' class="display-1 text-center"></h1>
+          </div>
+        </div>
+
+        <div id='options' class="row">
+          <div class="col-sm-6">
+            <div class="card mt-5 option-card">
+              <div class="card-block">
+                <h3 id='option-1' class="option display-3 text-center"></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card mt-5 option-card">
+              <div class="card-block">
+                <h3 id='option-2' class="option display-3 text-center"></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card mt-5 option-card">
+              <div class="card-block">
+                <h3 id='option-3' class="option display-3 text-center"></h3>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card mt-5 option-card">
+              <div class="card-block">
+                <h3 id='option-4' class="option display-3 text-center"></h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+
+    <script src="https://code.jquery.com/jquery-3.1.1.slim.min.js" integrity="sha384-A7FZj7v+d/sdmMqp/nOQwliLvUsJfDHW+k9Omg/a/EheAdgtzNs3hpfag6Ed950n" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+    <script src="js/game.js" charset="utf-8"></script>
+  </body>
+</html>
